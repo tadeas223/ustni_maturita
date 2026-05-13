@@ -4,6 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
+
         Console.WriteLine("fibonacci: " + Fibonacci(5));
         Console.WriteLine("factorial: " + Factorial(5));
 
@@ -15,6 +16,15 @@ public class Program
         graph.Add(4, [1]);
         
         Dfs(graph, 0);
+
+        Console.WriteLine("brute force:");
+        Console.WriteLine($"code is {BruteForce()}");
+        
+        Console.WriteLine("heuristika:");
+        Console.WriteLine($"code is {Heuristika()}");
+        
+        Console.WriteLine("monte carlo:");
+        Console.WriteLine($"code is {MonteCarlo()}");
     }
 
     public static int Fibonacci(int n)
@@ -55,5 +65,61 @@ public class Program
                 Dfs(graph, neighbor, visited);
             }
         }
+    }
+   
+    public static string? BruteForce()
+    {
+        for(int i = 0; i < 9999; i++)
+        {
+            string code = i.ToString("D4");
+            if(CheckCode(code))
+            {
+                return code;
+            }
+
+        }
+
+        return null;
+    }
+   
+    public static string? MonteCarlo()
+    {
+        Random rnd = new Random();
+        for(int i = 0; i < 10000; i++)
+        {
+            string code = rnd.Next(9999).ToString("D4");
+            if(CheckCode(code))
+            {
+                return code;
+            }
+
+        }
+
+        return null;
+    }
+   
+    public static string? Heuristika()
+    {
+        for(int i = 0; i < 9999/2; i++)
+        {
+            string code = (i*2).ToString("D4");
+            if(CheckCode(code))
+            {
+                return code;
+            }
+
+        }
+
+        return null;
+    }
+
+    public static bool CheckCode(string code)
+    {
+        if(code == "1234")
+        {
+            return true;
+        }
+
+        return false;
     }
 }
