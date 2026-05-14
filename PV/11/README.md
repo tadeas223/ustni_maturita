@@ -8,12 +8,12 @@
 - Na linuxu má socket File Descriptor a chová se jako soubor
 
 *Berkeley socket API*
-- bind()
-- accept()
-- open()
-- read()
-- write()
-- close()
+- bind() -> nastavit IP adresu socketu
+- accept() -> server socket přijme nové spojení
+- open() -> pokus o spojení
+- read() -> čtení z input streamu
+- write() -> psaní do output streamu
+- close() -> uzavření spojení
 
 *Sockety mohou být i mezi procesy na stejném počítači*
 
