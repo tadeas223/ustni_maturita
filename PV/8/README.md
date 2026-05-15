@@ -3,7 +3,17 @@
 ## Dědičnost
 - OOP
 - Třídá dědí vlastnosti jiné třídy
+
+# modifikace přístupu
+
+**C#**
 - public, protected, private viditelnost
+
+**python**
+- _ -> protected / private
+- __ -> name mangling
+    - Zabrání kolizím při dědění
+
 - Child třída musí inicializovat konstruktorem svojí parent třídu
 - Umožňuje lepší organizaci kódu
 

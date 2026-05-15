@@ -1,4 +1,4 @@
-# Soubory a serializace - Ukládání a načítání dat, formáty souborů
+#Soubory a serializace - Ukládání a načítání dat, formáty souborů
 
 ## Soubor v OS
 - Program nemůže pracovat se soubory napřímo.
