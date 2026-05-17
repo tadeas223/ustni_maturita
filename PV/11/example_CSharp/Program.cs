@@ -1,5 +1,7 @@
 ﻿using System.Net;
 using System.Net.Sockets;
+using System;
+using System.Text;
 
 
 public class Program
@@ -38,11 +40,11 @@ public class Program
             
             if(isServer)
             {
-                Server();
+                BerkleyServer();
             }
             else
             {
-                Client();
+                BerkleyClient();
             }
         }
     }
@@ -99,6 +101,68 @@ public class Program
             writer.WriteLine(Console.ReadLine());
 
             writer.Flush();
+        }
+    }
+
+    public static void BerkleyServer()
+    {
+        Socket server = new Socket(
+            SocketType.Stream,
+            ProtocolType.Tcp
+        );
+
+        server.Bind(new IPEndPoint(IPAddress.Any, 1234));
+    
+        server.Listen(3);
+
+        while(true)
+        {
+            Socket client = server.Accept();
+            
+            
+            while(client.Connected)
+            {
+                byte[] buffer = new byte[1024];
+                int received = client.Receive(buffer);
+                
+                string request = Encoding.UTF8.GetString(buffer);
+                byte[] response = Encoding.UTF8.GetBytes($"you wrote: {request}");
+
+                client.Send(response);
+            }
+        }
+    }
+    
+    public static void BerkleyClient()
+    {
+        Socket client = new Socket(
+            SocketType.Stream,
+            ProtocolType.Tcp
+        );
+
+        client.Connect(
+            new IPEndPoint(
+                new IPAddress(
+                    new byte[] {127, 0, 0, 1}
+                ), 
+                1234
+            )
+        );
+        
+        
+        while(client.Connected)
+        {
+            byte[] response = Encoding.UTF8.GetBytes(Console.ReadLine()!);
+
+            client.Send(response);
+            
+            byte[] buffer = new byte[1024];
+            int received = client.Receive(buffer);
+            
+            string request = Encoding.UTF8.GetString(buffer);
+
+            Console.WriteLine(request);
+
         }
     }
 }
