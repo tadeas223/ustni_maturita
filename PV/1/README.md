@@ -82,3 +82,11 @@ GC smaže nevyužívané objekty.
 - Pomalá
 - Obsahujé objekty, které jsou moc velké na stack
 - Obsahujé objekty, které jijichž velikost není známá při kompilaci (user input)
+
+
+
+
+
+
+| 1, 2, 3, 4, 5
+
