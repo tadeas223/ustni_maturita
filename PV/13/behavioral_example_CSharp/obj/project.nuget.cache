@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "R9zE46lnuLg=",
+  "success": true,
+  "projectFilePath": "/home/tad/maturita/PV/13/behavioral_example_CSharp/behavioral_example_CSharp.csproj",
+  "expectedPackageFiles": [
+    "/home/tad/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

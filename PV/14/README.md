@@ -81,3 +81,5 @@ Karta může existovat nezávisle na ruce, nebo balíčku.
 - Striktní vztah mezi objekty
 - Jeden Objekt je součástí jiné ho objekt a nemůže existovat bez něj
 - Když se hlavní objekt smaže, smaže se objekt spojený kompozicí
+
+

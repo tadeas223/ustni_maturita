@@ -1,0 +1,15 @@
+/home/tad/maturita/PV/13/behavioral_example_CSharp/bin/Debug/net10.0/behavioral_example_CSharp
+/home/tad/maturita/PV/13/behavioral_example_CSharp/bin/Debug/net10.0/behavioral_example_CSharp.deps.json
+/home/tad/maturita/PV/13/behavioral_example_CSharp/bin/Debug/net10.0/behavioral_example_CSharp.runtimeconfig.json
+/home/tad/maturita/PV/13/behavioral_example_CSharp/bin/Debug/net10.0/behavioral_example_CSharp.dll
+/home/tad/maturita/PV/13/behavioral_example_CSharp/bin/Debug/net10.0/behavioral_example_CSharp.pdb
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.AssemblyInfoInputs.cache
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.AssemblyInfo.cs
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.csproj.CoreCompileInputs.cache
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.sourcelink.json
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.dll
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/refint/behavioral_example_CSharp.dll
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.pdb
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/behavioral_example_CSharp.genruntimeconfig.cache
+/home/tad/maturita/PV/13/behavioral_example_CSharp/obj/Debug/net10.0/ref/behavioral_example_CSharp.dll
